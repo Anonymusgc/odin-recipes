@@ -26,10 +26,33 @@ body {
   padding: 1em 1em;
   background-color: var(--primary-color);
   color: var(--background-color);
+
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header h1 {
   margin-left: 1em;
+}
+.header nav {
+  font-size: 18px;
+  display: flex;
+  gap: 1em;
+  margin-right: 1em;
+}
+.header nav a {
+  display: block;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  transition: all 150ms ease-in-out;
+}
+.header nav a:hover {
+  background-color: #b49363;
+  color: var(--accent-color);
+}
+.header nav a:active {
+  background-color: var(--background-color);
+  color: var(--accent-color);
 }
 /* .header nav {
 } */
@@ -142,4 +165,8 @@ h2 {
 }
 .steps li {
   margin-top: 1em;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
